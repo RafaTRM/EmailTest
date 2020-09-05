@@ -3,244 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WEB2</title>
-    <link rel="stylesheet" href="css/estilos.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300;1,700&display=swap" rel="stylesheet">
-    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-    <link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-</head>
-<body>
-    <header class="hero">
-        <nav class="nav-hero">
-            <div class="container nav-container">
-                <div class="logo">
-                    <h2 class="logo-name">TRETRAVIS<span class="point">.</span></h2>
-                </div>
-                <div class="links">
-                    <a href="#" class="link">Inicio</a>
-                    <a href="#" class="link">Servicios</a>
-                    <a href="#" class="link">Proyectos</a>
-                    <a href="#" class="link">Clientes</a>
-                    <a href="#" class="link link--active">Contacto</a>
-                </div>
-            </div>
-        </nav>
-
-        <section class="container hero-main">
-            <div class="hero-textos">
-                <h1 class="title">Mantenimiento Doméstico e Industrial. <span class="title--active">Cuidamos el Valor de Tu Casa o Negocio.</span></h1>
-                <p class="copy">Nos encargamos de <span class="copy-active"></span> todo el mantenimiento que tu casa o negocio necesite.   </p>
-                <a href="#" class="cta">Agenda una visita</a>
-            </div>
-            <img src="img/mup.jpg" class="mockup">
-        </section>
-    </header>
-    <main>
-        <section class="services">
-            <div class="container">
-                <h2 class="subtitle">Nuestros Servicios<span class="point">.</span></h2>
-                <p class="copy-section">Ofrecemos soluciones integrales de mantenimiento</p>
-                <article class="containter-cards">
-                    <div class="card">
-                        <img src="img/i1.jpg" class="card-img">
-                        <div class="cards-text">
-                            <p class="card-list">Especialistas en mantenimiento</p>
-                            <h3 class="card-title">Diseño e Instalacion <span class="point">.</span></h3>
-                            <p class="card-copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ratione laborum sapiente iure impedit minus non sed a assumenda. Amet.</p>
-                            <a href="#" class="card-button">Comienza tu Proyecto</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="img/i2.jpg" class="card-img">
-                        <div class="cards-text">
-                            <p class="card-list">Especialistas en mantenimiento</p>
-                            <h3 class="card-title">Refrigeración Doméstica<span class="point">.</span></h3>
-                            <p class="card-copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ratione laborum sapiente iure impedit minus non sed a assumenda. Amet.</p>
-                            <a href="#" class="card-button">Comienza tu Proyecto</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="img/i3.jpg" class="card-img">
-                        <div class="cards-text">
-                            <p class="card-list">Especialistas en mantenimiento</p>
-                            <h3 class="card-title">Refrigración Industrial  <span class="point">.</span></h3>
-                            <p class="card-copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ratione laborum sapiente iure impedit minus non sed a assumenda. Amet.</p>
-                            <a href="#" class="card-button">Comienza tu Proyecto</a>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </section>
+    <title>Email</title>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script type="text/javascript">
+        function sendEmail() {
+            //var userValue = document.getElementByID("mailSubject").value
+            //var passValue = document.getElementByID("mailBody").value
         
-        <section class="projects container">
-            <h2 class="subtitle">Proyectos Recientes<span class="point">.</span></h2>
-            <p class="copy-section">Hemos colaborado con clientes a escala nacional</p>
-            <article class="container-bg">
-                <div class="card">
-                    <div class="cards-text">
-                        <h3 class="card-title">Gobierno<span class="point">.</span></h3>
-                        <p class="card-date">29 de agosto 2020</p>
-                        <p class="card-copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ratione laborum sapiente iure impedit minus non sed a assumenda. Amet.</p>
-                        <a href="#" class="card-button">Comienza tu Proyecto</a>
-                    </div>
-                </div>
-                <div class="background">
-                    <img src="img/bground2.jpg" class="background-img"> 
-                    <div class="background-text">
-                        <h3 class="background-title">Lorem ipsum dolor sit amet.</h3>
-                        <p class="background-copy">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit, corrupti!</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="cards-text">
-                        <h3 class="card-title">Sector Privado<span class="point">.</span></h3>
-                        <p class="card-date">29 de agosto 2020</p>
-                        <p class="card-copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ratione laborum sapiente iure impedit minus non sed a assumenda. Amet.</p>
-                        <a href="#" class="card-button">Comienza tu Proyecto</a>
-                    </div>
-                </div>
-                <div class="background">
-                    <img src="img/bground1.jpg" class="background-img">
-                    <div class="background-text">
-                        <h3 class="background-title">Lorem ipsum dolor sit amet.</h3>
-                        <p class="background-copy">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit, corrupti!</p>
-                    </div>
-                </div>
-            </article>
-        </section>
+            Email.send({
+                Host : "mail.bbsbys.com",
+                Username : "valeria.garcia@bbsbys.com",
+                Password : "V4l3ri4*GAc&88s#",
+                To : 'rafael.trejo@bbsbys.com',
+                From : "valeria.garcia@bbsbys.com",
+                Subject : "This is the subject",
+                Body : "And this is the body"
+            })
+                .then(function (message) {
+                    alert("mail sent successfully")
+                });
+               
+        }
 
-        <section class="testimony">
-            <div class="container">
-                <h2 class="subtitle">Clientes Satisfechos<span class="point">.</span></h2>
-                <p class="copy-section">Grandes empresas confían en nosotros</p>
-                <div class="testimony-container">
-                    <div class="testimony-card">
-                        <img src="img/1person.jpg" class="testimony-img">
-                        <div class="testimony-copy">
-                            <i class='bx bxl-google testimony-logo' ></i>
-                            <div class="testimony-info">
-                                <h3 class="testimony-name">Cacho Gacho</h3>
-                                <p class="testimony-position">Herr Direktor</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimony-card">
-                        <img src="img/2person.jpg" class="testimony-img">
-                        <div class="testimony-copy">
-                            <i class='bx bx-cookie testimony-logo'></i>    
-                            <div class="testimony-info">
-                                <h3 class="testimony-name">Weba</h3>
-                                <p class="testimony-position">Comercial</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimony-card">
-                        <div class="testimony-text">
-                            <img src="img/logo.png" class="tretravis-logo">
-                            <p class="testimony-history">"Desde que comencé a trabajar con las webas me siento muy, muy estresado!!!"</p>
-                            <div class="testimony-copy testimony-copy--modifier">
-                                <img src="img/1person.jpg" class="testimony-logo logo--picture">    
-                                <div class="testimony-info">
-                                    <h3 class="testimony-name">Cacho Gacho</h3>
-                                    <p class="testimony-position">Direktor</p>
-                                </div>
-                            </div>
-                        </div>
-    
-                    </div>
-                    
-                </div>
-                            
-            </div>
-        </section>
+    </script>
+</head>
 
-        <section class="email container container--modifier">
-            <h2 class="subtitle subtitle--modifier">Somos la mejor opción<span class="point">.</span></h2>
-            <p class="copy-section copy-section--modifier">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem quidem possimus officiis, nisi impedit tempore.</p>
-            <div class="check">
-                <div class="check-item">
-                    <i class='bx bxs-user-check' ></i>
-                    <div class="check-numbers">
-                        <p class="check-number">+200</p>
-                        <p class="check-copy">Proyectos exitosos</p>
-                    </div>
-                </div>
-                <div class="check-item">
-                    <i class='bx bxs-user-check' ></i>
-                    <div class="check-numbers">
-                        <p class="check-number">+200</p>
-                        <p class="check-copy">Proyectos exitosos</p>
-                    </div>
-                </div>
-                <div class="check-item">
-                    <i class='bx bxs-user-check' ></i>
-                    <div class="check-numbers">
-                        <p class="check-number">+200</p>
-                        <p class="check-copy">Proyectos exitosos</p>
-                    </div>
-                </div>
-            </div>
-            <form class="newsletter">
-                <input type="text" class="newsletter-input" placeholder="Ingresa tu e-mail">
-                <input type="submit" class="newsletter-submit" value="Comienza hoy!">
-            </form>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="container footer-caption">
-            <section class="download">
-                <h3 class="title-footer">Descarga nuestra app</h3>
-                <div class="download-app">
-                    <div class="download-item">
-                        <i class='bx bxl-apple download-logo'></i>
-                        <h4 class="download-title">App Store</h4>
-                    </div>
-                    <div class="download-item">
-                        <i class='bx bxl-play-store download-logo'></i>
-                        <h4 class="download-title">Play Store</h4>
-                    </div>
-                </div>
-                <div class="footer-copy">
-                    <p class="copyright">RTMCo &copy 2020 Todos los derechos reservados</p>
-                    <a href="#" class="politica-privacidad politica-privacidad--margin">Política de Privacidad</a>
-                    <a href="#" class="politica-privacidad">Términos y Condiciones</a>
-                </div>
-            </section>
-            <section class="get-email">
-                <h3 class="title-footer">Estas listo para trabajar con nosotros?</h3>
-                <form class="newsletter newsletter--modifier">
-                    <input type="text" class="newsletter-input" placeholder="Ingresa tu e-mail">
-                    <input type="submit" class="newsletter-submit" value="Comienza hoy!">
-                </form>
-                <div class="social-media">
-                    <p class="social-media-legend">Síguenos en:</p>
-                    <i class='social-media-icon bx bxl-facebook' ></i>
-                    <i class='social-media-icon bx bxl-linkedin' ></i>
-                    <i class='social-media-icon bx bxl-twitter' ></i>
-                    <i class='social-media-icon bx bxl-instagram' ></i>
-                    <i class='social-media-icon bx bxl-github' ></i>
-                </div>
-            </section>
-        </div>
-        <div class="contact">
-            <div class="item-contact">
-                <i class='bx bxs-copyright contact-icon'></i>
-                <h3 class="contact-title">Tretravis</h3>
-            </div>
-            <div class="item-contact">
-                <i class='bx bx-mail-send contact-icon'></i>
-                <h3 class="contact-title">hola@tretravis.mx</h3>
-            </div>
-            <div class="item-contact">
-                <i class='bx bxs-edit-location contact-icon'></i>
-                <h3 class="contact-title">Calle de la Weba</h3>
-            </div>
-            <div class="item-contact item-contact--gold">
-                <i class='bx bxs-chat contact-icon contact-icon--modifier'></i>
-                <h3 class="contact-title">Escríbenos</h3>
-            </div>
-        </div>
-    </footer>
+<body>
+    <table>
+        <tr>
+            <td>
+                Subject:
+            </td>
+            <td>
+                <input type="text" id="mailSubject"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Body:
+            </td>
+            <td>
+                <input type="text" id="mailBody"/>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="button" onclick="sendEmail();" value="send the mail"/>
+            </td>
+        </tr>
+    </table>    
 </body>
 </html>
